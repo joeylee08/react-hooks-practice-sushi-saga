@@ -2,7 +2,7 @@
   "sushis": [
     {
       "id": 1,
-      "name": "Maguro Magic",
+      "name": "FIRST",
       "img_url": "./sushi/maguro.png",
       "price": 20,
       "created_at": "2018-07-27T18:53:16.241Z"
@@ -695,7 +695,7 @@
     },
     {
       "id": 100,
-      "name": "Tsundere Ebi",
+      "name": "LAST",
       "img_url": "./sushi/ebi.png",
       "price": 15,
       "created_at": "2018-07-27T18:53:16.516Z"

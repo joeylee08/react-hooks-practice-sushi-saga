@@ -22,7 +22,7 @@ body {
 }
 
 .plate {
-  background-image: url("http://www.clker.com/cliparts/9/9/f/0/1194984076762834840small_plate.svg.hi.png");
+  background-image: url("https://banner2.cleanpng.com/20180324/fxw/kisspng-plate-tableware-platter-dish-plates-5ab6d91d657561.0696092915219325734156.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -32,7 +32,7 @@ body {
 }
 
 .empty-plate {
-  background-image: url("http://www.clker.com/cliparts/9/9/f/0/1194984076762834840small_plate.svg.hi.png");
+  background-image: url("https://banner2.cleanpng.com/20180324/fxw/kisspng-plate-tableware-platter-dish-plates-5ab6d91d657561.0696092915219325734156.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -78,4 +78,16 @@ body {
   height: 428px;
   width: 700px;
   margin: auto;
+}
+
+.wallet {
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  width: 30%;
+  left: 40%;
+  top: 60%;
+  width: 200px;
+  height: 70px;
+  border: 2px solid brown;
 }

@@ -1,14 +1,38 @@
-import React from "react";
+import React, {useState} from "react";
 import SushiContainer from "./SushiContainer";
 import Table from "./Table";
-
-const API = "http://localhost:3001/sushis";
+import Wallet from "./Wallet"
 
 function App() {
+  //empty plates array, pass to table
+  const [emptyPlates, setEmptyPlates] = useState([]);
+
+  //money count, pass to table
+  const [money, setMoney] = useState(100)
+
+  //eat handler, adds empty plate and decrements money, pass to 
+  //pass to sushi onClick
+  function handleClick(spent) {
+    setEmptyPlates(([
+      ...emptyPlates,
+      "plate"
+    ]))
+    setMoney(() => money - spent)
+  }
+
+  //add money to wallet
+  function handleSetMoney(e) {
+    e.preventDefault()
+    const amount = +e.target.amount.value;
+    setMoney(() => money + amount)
+    e.target.amount.value = ""
+  }
+
   return (
     <div className="app">
-      <SushiContainer />
-      <Table />
+      <SushiContainer money={money} handleClick={handleClick} />
+      <Table emptyPlates={emptyPlates} money={money} />
+      <Wallet handleSetMoney={handleSetMoney}/>
     </div>
   );
 }
